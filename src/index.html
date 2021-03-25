@@ -11,14 +11,14 @@
   <body>
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      metod="past"
+      metod="post"
     >
       <fieldset class="form-field">
         <legend>
           Personal infomation
         </legend>
         <label for="surname" class="label">
-            Surname:
+          Surname:
           <input
             type="text"
             name="surname"
@@ -27,7 +27,7 @@
           >
         </label>
         <label for="name" class="label">
-            Name:
+          Name:
           <input
             type="text"
             name="name"
@@ -55,12 +55,12 @@
           >
         </label>
 
-        <label for="check" class="label">
+        <label for="agreement" class="label">
           I accept the term of the agreement
           <input
             type="checkbox"
-            name="check"
-            id="check"
+            name="agreement"
+            id="agreement"
           >
         </label>
 
@@ -99,23 +99,23 @@
         </legend>
         <div class="label">
           Do you love cats?
-          <label for="yes">
+          <label for="cats-yes">
             <input
               type="radio"
               name="love-cats"
-              value="Yes"
-              id="yes"
+              value="cats-yes"
+              id="cats-yes"
             >
-            Yes
+              Yes
           </label>
-          <label for="no">
+          <label for="cats-no">
             <input
               type="radio"
               name="love-cats"
-              value="No"
-              id="no"
+              value="cats-no"
+              id="cats-no"
             >
-            No
+              No
           </label>
         </div>
         <label for="color" class="label">
@@ -127,12 +127,12 @@
           >
         </label>
 
-        <label for="time" class="label">
+        <label for="bedtime" class="label">
           What time do you go to bed?
           <input
             type="time"
-            name="time"
-            id="time"
+            name="bedtime"
+            id="bedtime"
           >
         </label>
 
@@ -177,10 +177,11 @@
           </select>
         </label>
       </fieldset>
-      <button type="submit"
-              onsubmit="onSubmit()"
+      <button
+        type="submit"
+        onsubmit="onSubmit()"
       >
-            Submit
+        Submit
       </button>
     </form>
     <script type="text/javascript" src="./main.js"></script>
